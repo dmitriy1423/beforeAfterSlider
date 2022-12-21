@@ -64,11 +64,15 @@ body.addEventListener('touchmove', (e) => {
   let x;
   let i;
 
-  for (i = 0; e < e.changedTouches.length; i++) {
-    x = e.chanchedTouches[i].pageX;
+  for (i = 0; i < e.changedTouches.length; i++) {
+    x = e.changedTouches[i].pageX;
   }
 
   x -= slider.getBoundingClientRect().left;
   beforeAfterSlider(x);
   pauseEvents(e);
+});
+
+slider.addEventListener('selectstart', (e) => {
+  e.preventDefault();
 });
