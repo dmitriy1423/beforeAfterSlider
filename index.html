@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BeforeAfterSlider</title>
+</head>
+<body>
+    <div class="slider">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slider-before-tablet@1x.png 1x, img/slider-before-tablet@2x.png 2x" width="560" height="512">
+          <img class="slider__image slider__image--before" src="img/slider-before@1x.png" srcset="img/slider-before@1x.png 1x, img/slider-before@2x.png 2x" width="280" height="256" alt="Кот Борис до начала питания Cat Energy Slim.">
+        </picture>
+        <button class="slider__control">
+          <svg class="slider__control-icon slider__control-icon--mobile" width="40" height="256" viewBox="0 0 40 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="18" width="4" height="256" rx="2" fill="#666666"/>
+            <rect x="1" y="109" width="38" height="38" rx="19" fill="white"/>
+            <path d="M16 119L8 128L16 137V119Z" fill="#666666"/>
+            <path d="M32 128L24 119V137L32 128Z" fill="#666666"/>
+            <rect x="1" y="109" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
+          </svg>
+          <svg class="slider__control-icon slider__control-icon--tablet" width="40" height="512" viewBox="0 0 40 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="18" width="4" height="512" rx="2" fill="#666666"/>
+            <rect x="1" y="237" width="38" height="38" rx="19" fill="white"/>
+            <path d="M16 247L8 256L16 265V247Z" fill="#666666"/>
+            <path d="M32 256L24 247V265L32 256Z" fill="#666666"/>
+            <rect x="1" y="237" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
+          </svg>
+          <span class="visually-hidden">Сравнение.</span>
+        </button>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slider-after-tablet@1x.png 1x, img/slider-after-tablet@2x.png 2x" width="560" height="512">
+          <img class="slider__image slider__image--after" src="img/slider-after@1x.png" srcset="img/slider-after@1x.png 1x, img/slider-after@2x.png 2x" width="280" height="256" alt="Кот Борис после начала питания Cat Energy Slim.">
+        </picture>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
