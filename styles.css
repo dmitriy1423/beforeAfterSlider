@@ -56,6 +56,10 @@
   cursor: pointer;
 }
 
+.slider__control-icon--tablet {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .slider {
     width: 560px;
